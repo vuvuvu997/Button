@@ -1,0 +1,265 @@
+.btn {
+    width: 200px;
+    height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 0;
+    font-size: 20px;
+}
+
+.btn-hover-effect {
+    width: 200px;
+    height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: orange;
+    color: #fff;
+    border-radius: 25px;
+    text-transform: uppercase;
+    line-height: 50px;
+    position: relative;
+    border: 0;
+}
+
+.btn-hover-effect .span-hover-me {
+    margin-right: 20%;
+}
+
+.btn-hover-effect .span-angle {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    position: absolute;
+    top:3px;
+    right: 3px;
+    margin: 2px;
+}
+
+.btn-hover-effect:hover .span-angle {
+    width: 190px;
+    position: absolute;
+    left: 3px;
+    margin-right: 3px;
+    /* animation: move infinite; */
+    animation-duration: 5s;
+}
+
+@keyframes move {
+    from {right: 3px;}
+    to {right: 100x;}
+}
+
+.btn-hover-effect:hover .span-angle i {
+    margin-right: 150px;
+    
+}
+
+.btn-hover-effect:hover .span-hover-me {
+    margin-left: 40px;
+}
+/* --------------------------------------- */
+.btn-3d {
+    width: 250px;
+    height: 80px;
+    position: relative;
+    border: 0;
+}
+
+.btn-3d .btn-above {
+    width: 250px;
+    height: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+    position: absolute;
+    background-color: rgb(241, 10, 60);
+    z-index: 100;
+    top: 0px;
+    left: 0;
+    border-radius: 7px;
+}
+
+.btn-3d .btn-below {
+    width: 250px;
+    height: 80px;
+    position: absolute;
+    background-color: rgb(146, 19, 19);
+    z-index: 99;
+    top: 15px;
+    left: 0px;
+    border-radius: 10px;
+}
+
+@keyframes move {
+    from {top: 0px;}
+    to {top: 10px;}
+}
+.btn-3d:focus .btn-above {
+    animation: move 0.3s;
+}
+
+/* ---------------------------------------- */
+.btn-recommend {
+    background-color: rgb(81, 105, 177);
+    color: #fff;
+    border-radius: 30px;
+    transition: width 0.5s, height 1s;
+}
+
+.btn-recommend:hover {
+    width: 250px;
+    height: 70px;
+}
+
+/* ------------------------------------------------- */
+.btn-sullivan {
+    width: 250px;
+    background-color: cornflowerblue;
+    color: #fff;
+    line-height: 60px;
+    position: relative;
+}
+
+.btn-sullivan .btn-search {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.btn-sullivan:hover {
+    background-color: rgba(6, 71, 97, 1);
+}
+
+.btn-sullivan:hover i {
+    line-height: 60px;
+    font-size: 30px;
+    transition: 0.7s;
+}
+
+.btn-button {
+    background-color: black;
+    color: rgb(67, 233, 67);
+    border: 2px solid rgb(67, 233, 67);
+}
+
+.btn-button:hover {
+    background-color: rgb(67, 233, 67);
+    color: #fff;
+    animation-delay: 2s;
+}
+
+.btn-button:hover {
+    position: relative;
+    border-block-start-color: rgb(11, 12, 11);
+    border-block-end-color: rgb(8, 8, 8);
+    transition: 1s;
+}
+
+/* -------------------------------------- */
+.btn-animation {
+    position: relative;
+}
+
+.btn-animation .text-go {
+    display: inline-block;
+    background-color: rgb(52, 39, 61);
+    color: white;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    /* border: 2px solid rgb(182, 178, 178); */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.btn-animation .icon-go {
+    display: none;
+    line-height: 60px;
+    /* border: 2px solid rgb(182, 178, 178); */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: -200px;
+}
+
+@keyframes move-text1 {
+    from {left: 0px;}
+    to {left: 100px;}
+    
+}
+
+@keyframes move-text2 {
+    from {left: 100px;}
+    to {left: 200px;}
+    
+}
+.btn-animation:hover .text-go {
+    display: inline-block;
+    animation-name: move-text1;
+    animation-duration: 1s;
+}
+.btn-animation:hover .text-go {
+    display: inline-block;
+    animation-name: move-text2;
+    animation-duration: 1s;
+}
+
+@keyframes move-icon1 {
+    from {left: -200px;}
+    to {left: -70px;}
+}
+
+@keyframes move-icon2 {
+    from {left: -100px;}
+    to {left: 0px;}
+}
+
+/* .btn-animation:hover .icon-go {
+    display: none;
+    animation-name: move-icon1;
+    animation-duration: 1s;
+} */
+
+.btn-animation:hover .icon-go {
+    display: inline-block;
+    animation-name: move-icon2;
+    animation-duration: 1s;
+}
+ /* ------------------------------------ */
+ .btn-effect {
+     width: 300px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #aaa;
+    border: 1px solid #eee;
+    z-index: 3;
+ }
+ .btn-effect.div-effect1 {
+    display: none;
+    transition: 1s, transform 1s;
+ }
+
+ .btn-effect.div-effect2 {
+    display: none;
+    transition: 1s, transform 1s;
+ }
+
+ .btn-effect:hover.div-effect1 {
+     display: inline-block;
+     width: 300px;
+     border: 1 solid black;
+    transform: rotate(120deg);
+    z-index: 3;
+ }
